@@ -1,0 +1,49 @@
+openapi: '3.0.3'
+
+info:
+  # APIに関する情報
+  title: 'PRFS backend'
+  version: '0.0.1'
+
+servers:
+  # APIの待ち受けURL
+  - url: 'http://{host}:{port}/'
+    description: 'local'
+    variables:
+      host:
+        default: "localhost"
+      port:
+        default: "8000"
+  - url: 'http://{host}:{port}/'
+    description: 'staging'
+    variables:
+      host:
+        # 本番環境とは別のドメイン
+        default: "prfs.abelia-sup.com"
+      port:
+        default: "8000"
+  - url: 'http://{host}:{port}/'
+    description: 'production'
+    variables:
+      host:
+        # プロダクト名が仮なのでhonahuku.comのサブドメインとして運用
+        default: "prfs.honahuku.com"
+      port:
+        default: "8000"
+
+tags:
+  $ref: "./tags.yml"
+
+paths:
+  $ref: "./paths.yml"
+
+components:
+  schemas:
+    $ref: "./schemas.yml"
+  responses:
+    $ref: "./responses.yml"
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
