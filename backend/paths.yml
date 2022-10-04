@@ -1,5 +1,5 @@
-/user:
-  $ref: ".paths/user.yml"
+/user/create:
+  $ref: ".paths/user/create.yml"
 /user/login:
   $ref: "./paths/user/login.yml"
 /user/logout:
