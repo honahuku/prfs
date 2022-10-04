@@ -1,10 +1,10 @@
 /user/create:
-  $ref: ".paths/user/create.yml"
+  $ref: '.paths/user/create.yml'
 /user/login:
-  $ref: "./paths/user/login.yml"
+  $ref: './paths/user/login.yml'
 /user/logout:
-  $ref: "./paths/user/logout.yml"
+  $ref: './paths/user/logout.yml'
 /user/update:
-  $ref: "./paths/user/update.yal"
+  $ref: './paths/user/update.yal'
 /user/delete:
-  $ref: "./paths/user/delete.yml"
+  $ref: './paths/user/delete.yml'

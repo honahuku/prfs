@@ -1,4 +1,4 @@
-openapi: '3.0.3'
+openapi: '3.1.0'
 
 info:
   # APIに関する情報
@@ -7,22 +7,22 @@ info:
 
 servers:
   # APIの待ち受けURL
-  $ref: "./servers.yml"
+  $ref: './servers.yml'
 
 tags:
   # APIで利用するタグのリスト
-  $ref: "./tags.yml"
+  $ref: './tags.yml'
 
 paths:
   # APIのエンドポイントとメソッド
-  $ref: "./paths.yml"
+  $ref: './paths.yml'
 
 components:
-# APIのオブジェクトスキーマ
+  # APIのオブジェクトスキーマ
   schemas:
-    $ref: "./schemas.yml"
+    $ref: './schemas.yml'
   responses:
-    $ref: "./responses.yml"
+    $ref: './responses.yml'
   securitySchemes:
     BearerAuth:
       type: http
