@@ -10,12 +10,15 @@ servers:
   $ref: "./servers.yml"
 
 tags:
+  # APIで利用するタグのリスト
   $ref: "./tags.yml"
 
 paths:
+  # APIのエンドポイントとメソッド
   $ref: "./paths.yml"
 
 components:
+# APIのオブジェクトスキーマ
   schemas:
     $ref: "./schemas.yml"
   responses:
