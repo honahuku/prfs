@@ -2,22 +2,22 @@
   description: 'local'
   variables:
     host:
-      default: 'localhost'
+      default: "localhost"
     port:
-      default: '8000'
+      default: "8000"
 - url: 'http://{host}:{port}/'
   description: 'staging'
   variables:
     host:
       # 本番環境とは別のドメイン
-      default: 'prfs.abelia-sup.com'
+      default: "prfs.abelia-sup.com"
     port:
-      default: '8000'
+      default: "8000"
 - url: 'http://{host}:{port}/'
   description: 'production'
   variables:
     host:
       # プロダクト名が仮なのでhonahuku.comのサブドメインとして運用
-      default: 'prfs.honahuku.com'
+      default: "prfs.honahuku.com"
     port:
-      default: '8000'
+      default: "8000"
