@@ -1,6 +1,6 @@
 post:
   tags:
-    -user
+    -auth
   summary: Create user
   description: ユーザーを作成するよ
   # API全体での一意なID
