@@ -10,7 +10,7 @@
   variables:
     host:
       # 本番環境とは別のドメイン
-      default: "prfs.abelia-sup.com"
+      default: "prfs.yoro.cyou"
     port:
       default: "8000"
 - url: 'http://{host}:{port}/'
