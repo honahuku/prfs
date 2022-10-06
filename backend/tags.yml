@@ -1,2 +1,4 @@
+- name: auth
+  description: Authentication 
 - name: users
   description: Access to Users
