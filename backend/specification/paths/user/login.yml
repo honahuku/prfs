@@ -2,7 +2,7 @@ get:
   tags:
     - auth
   summary: Logs user into the system
-  description: 'ユーザーログイン処理'
+  description: 'login'
   operationId: loginUser
   parameters:
     - name: username
