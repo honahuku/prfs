@@ -1,0 +1,11 @@
+/user/create:
+  $ref: ".paths/user/create.yml"
+/user/login:
+  $ref: "./paths/user/login.yml"
+/user/logout:
+  $ref: "./paths/user/logout.yml"
+/user/update:
+  $ref: "./paths/user/update.yal"
+/user/delete:
+# TODO: 実装
+  $ref: "./paths/user/delete.yml"

@@ -1,0 +1,23 @@
+post:
+  tags:
+    -auth
+  summary: Create user
+  description: ユーザーを作成するよ
+  # API全体での一意なID
+  operationId: createUser
+  # メディアタイプのスキーマを指定する
+  reqestBody:
+    description: Create user object
+    content:
+      # json以外は受け取らない
+      application/json:
+        schema:
+        # TODO:スキーマの定義
+          $ref: "#/components/schemas/User"
+  responses:
+    201:
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/User'

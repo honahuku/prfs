@@ -1,0 +1,30 @@
+openapi: '3.0.3'
+
+info:
+  # APIに関する情報
+  title: 'PRFS backend'
+  version: '0.0.1'
+
+servers:
+  # APIの待ち受けURL
+  $ref: "./servers.yml"
+
+tags:
+  # APIで利用するタグのリスト
+  $ref: "./tags.yml"
+
+paths:
+  # APIのエンドポイントとメソッド
+  $ref: "./paths.yml"
+
+components:
+# APIのオブジェクトスキーマ
+  schemas:
+    $ref: "./schemas.yml"
+  responses:
+    $ref: "./responses.yml"
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
