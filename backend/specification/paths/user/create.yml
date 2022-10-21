@@ -12,6 +12,7 @@ post:
       # json以外は受け取らない
       application/json:
         schema:
+        # TODO:スキーマの定義
           $ref: "#/components/schemas/User"
   responses:
     201:

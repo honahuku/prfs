@@ -3,8 +3,11 @@
 /user/login:
   $ref: "./paths/user/login.yml"
 /user/logout:
+# TODO: 実装
   $ref: "./paths/user/logout.yml"
 /user/update:
+# TODO: 実装
   $ref: "./paths/user/update.yal"
 /user/delete:
+# TODO: 実装
   $ref: "./paths/user/delete.yml"
